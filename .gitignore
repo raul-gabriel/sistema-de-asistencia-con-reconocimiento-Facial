@@ -1,0 +1,104 @@
+########################################
+# 🔥 SISTEMA OPERATIVO
+########################################
+.DS_Store
+Thumbs.db
+
+########################################
+# 🔥 GENERAL
+########################################
+.env
+.env.*
+*.log
+*.tar.gz
+*.rar
+# Ignorar todos los zip
+*.zip
+
+# EXCEPTUAR este archivo
+!recursos.zip
+
+########################################
+# 🔥 FLUTTER
+########################################
+# Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Android
+android/.gradle/
+android/app/build/
+android/local.properties
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+
+########################################
+# 🔥 LARAVEL
+########################################
+/vendor/
+/node_modules/
+/public/storage
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/bootstrap/cache/*
+/public/hot
+
+# Laravel Mix / Vite
+/public/build
+/public/mix-manifest.json
+
+########################################
+# 🔥 PYTHON
+########################################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+########################################
+# 🔥 BASES DE DATOS
+########################################
+*.sqlite
+*.db
+
+########################################
+# 🔥 ARCHIVOS DE SERVIDOR LOCAL
+########################################
+uvicorn.log
+*.pid

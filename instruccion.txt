@@ -1,0 +1,8 @@
+1) crear las base de datos (db_asistencia.sql, procedimientos.sql)
+2)cd panel_administrativo   >composer install
+3) configurar el .env
+
+
+4)cd apibuscar
+pip install -r requirements.txt
+python main.py 

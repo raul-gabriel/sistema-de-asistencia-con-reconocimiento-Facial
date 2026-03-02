@@ -1,0 +1,46 @@
+pip install -r requirements.txt
+
+
+o 
+pip install fastapi uvicorn faiss-cpu numpy mysql-connector-python pydantic python-multipart sqlalchemy python-dotenv
+
+
+
+
+
+
+# 1. Instalar dependencias
+pip install -r requirements.txt
+
+# 2. Configurar .env
+cp .env.example .env
+# Editar con tus credenciales de MySQL
+
+# 3. Ejecutar
+python main.py
+
+
+# 1. CONFIGURACIÓN BÁSICA
+URL: http://localhost:8000/reconocer
+Method: POST
+Content-Type: application/json
+
+# 2. BODY (JSON) - EJEMPLO CON EMBEDDING REAL
+{
+    "embedding": [
+        0.123, ....., 0.098, 0.765
+    ]
+}
+
+
+
+
+
+ GET /listar-embeddings para ver qué tienes
+ POST /sincronizar-faiss si necesitas recargar
+
+
+{idembedding}
+POST /agregar-faiss/123 → Agrega solo el embedding del alumno 123
+DELETE /eliminar-faiss/123 → Elimina solo el embedding del alumno 123 de FAISS
+DELETE /limpiar-faiss    -> limpia todos lo embedding y deja em blanco

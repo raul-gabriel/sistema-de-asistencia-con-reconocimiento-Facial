@@ -1,0 +1,9 @@
+pip install fastapi
+pip install uvicorn
+pip install faiss-cpu
+pip install numpy
+pip install mysql-connector-python
+pip install pydantic
+pip install python-multipart
+pip install sqlalchemy
+pip install python-dotenv
